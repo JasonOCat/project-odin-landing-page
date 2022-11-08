@@ -1,5 +1,15 @@
 * {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -8,6 +18,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-size: 24px;
 }
 
 h1 {
@@ -34,10 +45,8 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 15px;
+  gap: 25px;
 }
-
-
 
 .header {
   background-color: #1F2937;
@@ -53,12 +62,41 @@ a {
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #1F2937;
+  height: 500px;
+  gap: 50px;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  color: #E5E7EB;
+  gap: 10px;
 }
 
 .hero-text {
   font-size: 18px;
   color: #E5E7EB;
+}
+
+.hero-button {
+  border: 2px solid #E5E7EB;
+  border-radius: 5px;
+  background-color: #3882F6;
+  color: #E5E7EB;
+  padding: 2px 40px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.hero-img img {
+  width: 600px;
+  height: 250px;
 }
 
 .img-grid {
@@ -70,20 +108,24 @@ a {
   padding-bottom: 100px;
 }
 
-.img-grid img {
+.info {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  flex-shrink: 0;
 
 }
 
-.info {
-  width: 200px;
-  height: 200px;
-  flex-shrink: 0;
+.info img {
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 10px;
   border: 5px solid #3882F6;
 }
 
 .info p{
   color: #1F2937;
+  font-size: 24px;
 }
 
 .thor-quote {
@@ -91,7 +133,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #E5E7EB;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: lighter;
   font-style: italic;
   color: #1F2937;
@@ -128,6 +170,7 @@ a {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 10px;
+  font-size: 24px;
 }
 
 .CTA-text {
@@ -143,7 +186,7 @@ a {
 }
 
 .call {
-  font-size: 19px;
+  font-size: 36px;
   font-weight: bold;
 }
 
@@ -157,8 +200,9 @@ a {
   border-radius: 5px;
   background-color: #3882F6;
   color: #E5E7EB;
-  padding: 2px 20px;
+  padding: 2px 40px;
   font-weight: bold;
+  font-size: 24px;
 }
 
 
